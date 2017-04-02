@@ -1,0 +1,4 @@
+ssh-keygen and ssh-copy-id # for setting up ssh
+mosh # for persistent ssh, works with bad internet
+xpra # better x forwarding, goes well with mosh. also can attach to existing display
+

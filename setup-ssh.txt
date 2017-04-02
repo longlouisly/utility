@@ -1,0 +1,8 @@
+how ssh works:
+each computer has its own private and public key.
+add public key to authorized_keys on all machines you want to ssh into
+naturally, your own public key should be in authorized keys. This causes issue on stampede if not true
+
+ssh-keygen -t rsa
+ssh-add
+ssh-copy-id username@neothalamus

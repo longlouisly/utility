@@ -1,0 +1,21 @@
+looks like matlab couldn't find GLIBCXX 3.4.20 from /usr/lib64 or matlab/r2014b/sys/os/... .../libstdc++.s0.6
+To check, use:
+
+strings /opt/apps/ossw/applications/gcc/gcc-5.2/c7/lib64/libstdc++.so.6 |grep GLIBCXX
+
+now this one does have the proper GLIB version. use
+LD_PRELOAD="/opt/apps/ossw/applications/gcc/gcc-5.2/c7/lib64/libstdc++.so.6" matlab
+
+
+
+
+other considerations:
+Zimo says to use Jan 27th revision, since the latest Feb does not include visualize_output_masks.
+Also, remove parfors, they're buggy for some reason. Could be related to GLIBCXX? Check later.
+Remove hard coded paths containing Zimo.
+
+%Added by louis in demo script.
+params.feat_type = 'sift';
+params.caffe_dir = 'void'; % the caffe directory on local machine if you want to use caffenet features to compute correspondences
+params.nn_feat_type = 'gist';
+

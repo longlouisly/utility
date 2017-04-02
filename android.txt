@@ -1,0 +1,3 @@
+adb devices
+adb shell
+adb push/pull [source] [target]

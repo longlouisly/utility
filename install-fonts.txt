@@ -1,0 +1,18 @@
+For TrueType fonts, the installation process is a little different.
+
+mkdir ~/.fonts
+
+Move your fonts to ~/.ttfonts
+
+mv *.ttf ~/.fonts
+
+Create the fonts.dir and fonts.scale files.
+
+cd ~/.fonts
+mkfontscale
+mkfontdir
+fc-cache -fv ~/.fonts
+
+The new font should now be available. Check if the font has been added by running fc-list.
+
+fc-list

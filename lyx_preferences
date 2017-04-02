@@ -1,0 +1,108 @@
+# LyX 2.0.8.1 generated this file. If you want to make your own
+# modifications you should do them from inside LyX and save.
+
+Format 1
+
+
+#
+# MISC SECTION ######################################
+#
+
+\user_name "Louis,,,"
+\user_email ""
+
+#
+# SCREEN & FONTS SECTION ############################
+#
+
+\screen_zoom 300
+\screen_font_roman "Computer Modern Bright"
+\screen_font_sans "Computer Modern Bright"
+\screen_font_typewriter "Anonymous Pro"
+\screen_font_sizes 5 7 8 9 10 12 14.4 17.260000000000002 20.739999999999998 24.879999999999999
+\single_instance false
+
+#
+# COLOR SECTION ###################################
+#
+
+\set_color "cursor" "#00ca00"
+\set_color "background" "#555555"
+\set_color "foreground" "#000000"
+\set_color "selection" "#101010"
+\set_color "selectiontext" "#ffffff"
+\set_color "latex" "#003900"
+\set_color "notebg" "#3f4301"
+\set_color "commentbg" "#2b2b2b"
+\set_color "shaded" "#bcbcbc"
+\set_color "listingsbg" "#000e0f"
+\set_color "commandbg" "#ffffff"
+\set_color "commandframe" "#111111"
+\set_color "math" "#000061"
+\set_color "mathbg" "#555555"
+\set_color "mathmacroframe" "#fff3e6"
+\set_color "mathcorners" "#000000"
+\set_color "collapsable" "#c3c3c3"
+\set_color "insetframe" "#161616"
+\set_color "tabularline" "#d3d3d3"
+\set_color "buttonbg" "#625d59"
+\set_color "buttonhoverbg" "#4c4c4d"
+
+#
+# PRINTER SECTION ###################################
+#
+
+
+#
+# TEX SECTION #######################################
+#
+
+
+#
+# FILE SECTION ######################################
+#
+
+
+#
+# PLAIN TEXT EXPORT SECTION ##############################
+#
+
+
+#
+# SPELLCHECKER SECTION ##############################
+#
+
+
+#
+# LANGUAGE SUPPORT SECTION ##########################
+#
+
+
+#
+# 2nd MISC SUPPORT SECTION ##########################
+#
+
+
+#
+# FORMATS SECTION ##########################
+#
+
+\format "dia" "dia" "DIA" "" "auto" "auto" "vector"
+\format "excel" "xls" "Excel spreadsheet" "" "" "auto" "document"
+\format "fen" "fen" "FEN" "" "auto" "auto" ""
+\format "fig" "fig" "FIG" "" "auto" "auto" "vector"
+\format "gnumeric" "gnumeric" "Gnumeric spreadsheet" "" "" "auto" "document"
+\format "agr" "agr" "Grace" "" "auto" "auto" "vector"
+\format "noteedit" "not" "Noteedit" "" "auto" "auto" "vector"
+\format "oocalc" "ods" "OpenOffice spreadsheet" "" "" "auto" "document"
+\format "tgif" "obj" "Tgif" "" "auto" "auto" "vector"
+
+#
+# CONVERTERS SECTION ##########################
+#
+
+
+#
+# COPIERS SECTION ##########################
+#
+

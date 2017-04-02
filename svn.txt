@@ -1,0 +1,8 @@
+# useful for not checking out the entire repo
+# create a new directory using
+svn import new/folder [dest] -m "message"
+svn delete
+
+# Then can checkout that new directory and only work from there
+svn checkout
+svn commit

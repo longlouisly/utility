@@ -1,0 +1,4 @@
+rsync -avu source/ target
+
+-a means archive. many things, including recursive, keep permissions, and preserve time stamp of source
+-u means update, do not modify target if file on target is newer

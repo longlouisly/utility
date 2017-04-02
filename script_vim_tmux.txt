@@ -1,0 +1,26 @@
+# for pathogen
+git clone https://github.com/tpope/vim-pathogen.git
+mv vim-pathogen/autoload ~/.vim
+mkdir ~/.vim/bundle
+ 
+# add to .vim
+execute pathogen#infect()
+
+# install nerdtree
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree
+
+
+# install ctrl p
+cd ~/.vim/bundle
+git clone https://github.com/kien/ctrlp.vim
+
+# install youcompleteme
+cd ~/.vim/bundle
+git clone https://github.com/valloric/youcompleteme
+cd ~/.vim/bundle/youcompleteme
+git submodule update --init --recursive 
+./install.py --all
+
+
+

@@ -1,0 +1,12 @@
+tmux
+vim
+# use pvc to preview continuously as tex files are updated. 
+latexmk -pdf -pvc
+edit latxmkrc to have:
+
+$pdf_previewer = "start evince";
+$pdf_update_method = 4;
+
+
+
+Also need: vim latex preconfig for tab completion.

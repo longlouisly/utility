@@ -1,0 +1,24 @@
+create dotfiles repo
+vimbits
+pathogen plugin manager
+vim powerline
+python-mode for folding functions!
+add leader , for vim
+split tmux with | - ?
+what is tmuxinator? auto setup projects when load tmux
+ctrl-p plugin for fuzzy search in bim
+youcompleteme
+nerdtree
+ipdb for breakpoints
+wemux for tmux pair programing
+
+check vimrc
+tmuxrc
+
+tmux pain control for better bindings?
+
+
+What i actually use:
+netrw works just fine: Explore
+figure out pymode 
+setup matlab viemu
