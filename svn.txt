@@ -6,3 +6,9 @@ svn delete
 # Then can checkout that new directory and only work from there
 svn checkout
 svn commit
+
+
+
+
+# svn add file with parent directory
+svn add --parents directory/file

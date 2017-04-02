@@ -1,0 +1,5 @@
+# on server
+xpra start :88
+
+# on client
+xpra attach ssh:host:88

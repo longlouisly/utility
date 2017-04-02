@@ -1,0 +1,6 @@
+$ rclone config
+
+# then login and grant rclone permissions
+# this will save config files in ~/.rclone.conf
+
+$ rclone sync source drive:dest/
