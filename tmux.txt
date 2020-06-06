@@ -1,0 +1,11 @@
+# create new session
+tmux new-session -s [session name]
+
+# detach other sessions before attaching
+tmux a -d -t [session name]
+
+# select which session to detach
+bind-key D
+
+# reload .tmux.conf file
+bind-key :source-file ~/.tmux.conf

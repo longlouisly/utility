@@ -1,0 +1,2 @@
+# show all the machine names in cvc/cam
+getent netgroup cvc

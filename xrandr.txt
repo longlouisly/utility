@@ -1,0 +1,53 @@
+# set vertical monitors with no gap
+xrandr --output DP-1.8 --right-of DP-1.1.8
+
+
+## Make two monitors maximize as one
+#1. Generate the modeline:
+cvt 3840 2160
+# gives output: Modeline "3840x2160_60.00"  794.25  3840 4160 4584 5328  2400 2403 2409 2486 -hsync +vsync
+
+
+#2. Add the mode to xrandr:
+
+xrandr --newmode "3840x2160_60.00"  794.25  3840 4160 4584 5328  2400 2403 2409 2486 -hsync +vsync
+
+#3. Set the mode on VIRTUAL1:
+
+xrandr --addmode VIRTUAL1 3840x2160_60.00
+
+#4. Set display1 to clone VIRTUAL1 (in my case HDMI1):
+
+xrandr --output HDMI1 --same-as VIRTUAL1
+
+#Then place HDMI2 right of HDMI1:
+
+xrandr --output HDMI2 --right-of HDMI1
+
+
+
+## Make two monitors maximize as one
+#1. Generate the modeline:
+cvt 2400 1920
+
+# 2400x1920 59.99 Hz (CVT 4.61M4) hsync: 119.31 kHz; pclk: 393.25 MHz
+# Modeline "2400x1920_60.00"  393.25  2400 2592 2848 3296  1920 1923 1930 1989 -hsync +vsync
+
+
+
+#2. Add the mode to xrandr:
+
+xrandr --newmode "2400x1920_60.00"  393.25  2400 2592 2848 3296  1920 1923 1930 1989 -hsync +vsync
+
+
+#3. Set the mode on VIRTUAL1:
+
+xrandr --addmode VIRTUAL1 2400x1920_60.00
+
+#4. Set display1 to clone VIRTUAL1 (in my case HDMI1):
+
+xrandr --output HDMI1 --same-as VIRTUAL1
+
+#Then place HDMI2 right of HDMI1:
+
+xrandr --output HDMI2 --right-of HDMI1

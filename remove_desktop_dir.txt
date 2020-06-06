@@ -1,0 +1,2 @@
+edit ~/.config/user-dirs.dir
+Make it hidden perhaps

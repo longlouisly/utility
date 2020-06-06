@@ -1,0 +1,17 @@
+# From Noah
+
+# use a password to encrypt file
+# the symmetric is important, otherwise you'd have to store the keys
+# the armor option writes the files in ascii
+gpg --armor --symmetric file
+
+# to decrypt
+gpg file.gpg
+
+
+# For cloud storage, noah suggests store the files online encrypted using keys. 
+# Then encrypt the keys with symmetric encryption password.
+
+
+# Alternatively, it looks like rclone can encrypt using password just fine, even though the hashed passwords look different.
+

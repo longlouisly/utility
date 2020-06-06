@@ -1,4 +1,7 @@
 anaconda has patch_elf utility to change the rpath
 (this tells the library where to find libraries at runtime, without relying on env variables.)
+patchelf --print-rpath library.so
+patchelf --set-rpath [rpath] library.so
+
 (This is useful when many versions of library exist on a system)
 there is another utility called chrpath, but it is restricted to rpaths of the same length as the original rpath! this is useless!

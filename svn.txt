@@ -1,7 +1,11 @@
 # useful for not checking out the entire repo
 # create a new directory using
 svn import new/folder [dest] -m "message"
+# example: svn import myproj http://svn.red-bean.com/repos/trunk/misc/myproj -m "message"
 svn delete
+
+# actually even better, do 
+svn mkdir svn.ices.utexas.edu/repos/cvc/trunk/my_new_directory
 
 # Then can checkout that new directory and only work from there
 svn checkout
@@ -12,3 +16,11 @@ svn commit
 
 # svn add file with parent directory
 svn add --parents directory/file
+
+
+# reset working directory
+svn revert --recursive .
+
+# remove untracked files
+svn status | egrep '^\?' | cut -c8- | xargs rm
+

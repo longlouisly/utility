@@ -1,0 +1,7 @@
+# convert ppm to jpg
+for f in *ppm ; do convert -quality 100 $f `basename $f ppm`jpg; done
+
+# jpg to mpeg, with framerate, bitrate options
+ffmpeg -r 10 -b 1800 -i %03d.jpg test1800.mp4
+
+

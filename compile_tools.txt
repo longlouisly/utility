@@ -1,0 +1,6 @@
+useful linux tools:
+ldd (check linked library dependencies)
+c++filt (look up symbols)
+
+created a link to libMagick++.so.5 and added to LD_LIBRARY_PATH to get VRN to work
+
