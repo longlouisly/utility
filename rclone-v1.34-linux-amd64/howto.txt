@@ -5,8 +5,8 @@ $ rclone config
 
 # use --no-traverse so that rclone doesn't read all files on dest first
 
-# just copy
-$ rclone -v --no-traverse copy source/path drive:dest/path
+# just copy. the -l option copies symlinks as text files
+$ rclone -v -l --no-traverse copy source/path drive:dest/path
 
 # make destination match the source
 $ rclone -v sync source/path drive:dest/path
